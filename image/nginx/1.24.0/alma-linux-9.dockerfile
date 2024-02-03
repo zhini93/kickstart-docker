@@ -8,7 +8,7 @@ RUN set -x \
   && dnf install -y compat-openssl10-1.0.2o-4.el8.x86_64.rpm \
   && wget https://nginx.org/packages/rhel/7/x86_64/RPMS/nginx-1.24.0-1.el7.ngx.x86_64.rpm --quiet \
   && dnf install -y nginx-1.24.0-1.el7.ngx.x86_64.rpm \
-  && rm nginx-1.24.0-1.el7.ngx.x86_64.rpm
+  && rm nginx-1.24.0-1.el7.ngx.x86_64.rpm \
   && rm compat-openssl10-1.0.2o-4.el8.x86_64.rpm
 
 # Create App and Nginx directories.
